@@ -12,6 +12,8 @@ import androidx.annotation.Nullable;
 import com.lb.designpatterns.R;
 import com.lb.designpatterns.StaticFun;
 /**
+ * ----工厂模式----
+ *
  * 普通工厂
  * 优点
  *  你可以避免创建者和具体产品之间的紧密耦合。
@@ -49,6 +51,7 @@ public class FactoryActivity extends Activity
         implements View.OnClickListener {
 
     private TextView textView;
+    private Button button;
     private int flag;
 
     private Production production;
@@ -59,9 +62,10 @@ public class FactoryActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo);
         textView = StaticFun.textviewRegister(R.id.demo_textview,this);
-        StaticFun.buttonRegister(R.id.demo_button, this, this);
+        button = StaticFun.buttonRegister(R.id.demo_button, this, this);
         flag = 0;
 
+        button.setText("工厂模式");
         textView.setText("多次点击按钮生成不同的产品");
     }
 

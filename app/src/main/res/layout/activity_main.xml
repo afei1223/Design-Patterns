@@ -27,8 +27,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <Button
-                android:text="抽象工厂模式"
-                android:id="@+id/abstract_factory"
+                android:text="生成器模式"
+                android:id="@+id/builder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <Button

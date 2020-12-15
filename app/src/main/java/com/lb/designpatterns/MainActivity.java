@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.lb.designpatterns.builder.BuilderActivity;
 import com.lb.designpatterns.factory.FactoryActivity;
 
 /**
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         StaticFun.buttonRegister(R.id.factory,this, this);
+        StaticFun.buttonRegister(R.id.builder,this, this);
     }
 
     @Override
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity
         switch (v.getId()){
             case R.id.factory:
                 intent = new Intent(this, FactoryActivity.class);
+                break;
+            case R.id.builder:
+                intent = new Intent(this, BuilderActivity.class);
                 break;
             default:
                 Log.i(TAG,"Mainativity button error");

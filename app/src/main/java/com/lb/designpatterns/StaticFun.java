@@ -13,9 +13,10 @@ import android.widget.TextView;
 public class StaticFun {
     public static final String TAG = "design patterns";
 
-    public static void buttonRegister(int i, View.OnClickListener onClickListener, Activity activity){
+    public static Button buttonRegister(int i, View.OnClickListener onClickListener, Activity activity){
         Button button = activity.findViewById(i);
         button.setOnClickListener(onClickListener);
+        return button;
     }
     public static void buttonRegister(int i, View.OnClickListener onClickListener, Dialog dialog){
         Button button = dialog.findViewById(i);
