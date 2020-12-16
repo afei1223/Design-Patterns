@@ -10,6 +10,8 @@ import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class StaticFun {
     public static final String TAG = "design patterns";
 
@@ -25,5 +27,12 @@ public class StaticFun {
     public static TextView textviewRegister(int i, Activity activity){
         TextView textView = activity.findViewById(i);
         return textView;
+    }
+
+    public static void buttonRegister(List<Integer> buttons, View.OnClickListener onClickListener, Activity activity) {
+        for(int i : buttons){
+            Button button = activity.findViewById(i);
+            button.setOnClickListener(onClickListener);
+        }
     }
 }

@@ -32,6 +32,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <Button
+                android:text="单例模式"
+                android:id="@+id/singleton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <Button
