@@ -1,4 +1,4 @@
-package com.lb.designpatterns.singleton;
+package com.lb.designpatterns.creational.singleton;
 
 import android.util.Log;
 

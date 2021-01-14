@@ -1,4 +1,4 @@
-package com.lb.designpatterns.factory;
+package com.lb.designpatterns.creational.factory;
 
 /**
  * 通用产品接口

@@ -1,4 +1,4 @@
-package com.lb.designpatterns.builder;
+package com.lb.designpatterns.creational.builder;
 
 /**
  * 主管类

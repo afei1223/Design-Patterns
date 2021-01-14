@@ -1,6 +1,4 @@
-package com.lb.designpatterns.factory;
-
-import android.view.LayoutInflater;
+package com.lb.designpatterns.creational.factory;
 
 /**
  * 飞机创建工厂

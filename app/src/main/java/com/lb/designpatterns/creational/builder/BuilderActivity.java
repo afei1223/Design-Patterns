@@ -1,4 +1,4 @@
-package com.lb.designpatterns.builder;
+package com.lb.designpatterns.creational.builder;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,9 +11,6 @@ import androidx.annotation.Nullable;
 
 import com.lb.designpatterns.R;
 import com.lb.designpatterns.StaticFun;
-import com.lb.designpatterns.factory.CarFactory;
-import com.lb.designpatterns.factory.Factory;
-import com.lb.designpatterns.factory.MixAbstractFactory;
 
 /**
  * ----生成器模式----

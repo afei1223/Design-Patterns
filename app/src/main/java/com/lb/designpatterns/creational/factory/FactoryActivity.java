@@ -1,4 +1,4 @@
-package com.lb.designpatterns.factory;
+package com.lb.designpatterns.creational.factory;
 
 import android.app.Activity;
 import android.os.Bundle;

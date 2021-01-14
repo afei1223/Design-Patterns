@@ -7,9 +7,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.lb.designpatterns.builder.BuilderActivity;
-import com.lb.designpatterns.factory.FactoryActivity;
-import com.lb.designpatterns.singleton.Singleton;
+import com.lb.designpatterns.behavioral.observer.OberverActivity;
+import com.lb.designpatterns.creational.builder.BuilderActivity;
+import com.lb.designpatterns.creational.factory.FactoryActivity;
+import com.lb.designpatterns.creational.singleton.Singleton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity
         buttons.add(R.id.factory);
         buttons.add(R.id.builder);
         buttons.add(R.id.singleton);
+
+        buttons.add(R.id.observer);
         StaticFun.buttonRegister(buttons, this, this);
 
     }
@@ -51,6 +54,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.singleton:
 //                TestThreadSafeSingletonPlus();
                 Singleton.getIntence().print();
+                break;
+            case R.id.observer:
+                intent = new Intent(this, OberverActivity.class);
                 break;
             default:
                 Log.i(TAG,"Mainativity button error");

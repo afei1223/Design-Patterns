@@ -21,6 +21,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <TextView
+                android:text="创造型设计模式"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
             <Button
                 android:text="工厂模式"
                 android:id="@+id/factory"
@@ -36,7 +41,14 @@
                 android:id="@+id/singleton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+            <TextView
+                android:text="行为模式"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
             <Button
+                android:text="观察者模式"
+                android:id="@+id/observer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <Button

@@ -1,7 +1,6 @@
-package com.lb.designpatterns.builder;
+package com.lb.designpatterns.creational.builder;
 
 import android.util.Log;
-import android.widget.ScrollView;
 
 import com.lb.designpatterns.StaticFun;
 

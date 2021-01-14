@@ -1,4 +1,4 @@
-package com.lb.designpatterns.builder;
+package com.lb.designpatterns.creational.builder;
 
 /**
  * 创建构造器，这里参数有点少，只是举做例子。

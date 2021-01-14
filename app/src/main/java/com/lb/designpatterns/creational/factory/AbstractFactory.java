@@ -1,4 +1,4 @@
-package com.lb.designpatterns.factory;
+package com.lb.designpatterns.creational.factory;
 
 /**
  * 抽象工厂方法

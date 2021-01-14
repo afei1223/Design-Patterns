@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".factory.FactoryActivity"/>
-        <activity android:name=".builder.BuilderActivity"/>
+        <activity android:name=".behavioral.observer.OberverActivity"/>
+        <activity android:name=".creational.factory.FactoryActivity"/>
+        <activity android:name=".creational.builder.BuilderActivity"/>
     </application>
 
 </manifest>

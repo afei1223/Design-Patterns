@@ -1,16 +1,16 @@
-package com.lb.designpatterns.factory;
+package com.lb.designpatterns.creational.factory;
 
 import android.util.Log;
 
 import com.lb.designpatterns.StaticFun;
 
 /**
- * 具体产品 airplane
+ * 具体产品 car
  * */
-public class Airplane implements Production {
+public class Car implements Production {
     private String TAG = StaticFun.TAG;
 
-    public Airplane() {
+    public Car(){
         this.Function();
         this.Auth();
         this.Name();
@@ -18,16 +18,16 @@ public class Airplane implements Production {
 
     @Override
     public void Function() {
-        Log.i(TAG,"fly");
+        Log.i(TAG,"drive");
     }
 
     @Override
     public void Name() {
-        Log.i(TAG,"airplane");
+        Log.i(TAG,"Car");
     }
 
     @Override
     public void Auth() {
-        Log.i(TAG,"莱特兄弟");
+        Log.i(TAG,"福特");
     }
 }
