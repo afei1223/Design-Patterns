@@ -10,6 +10,8 @@ import androidx.annotation.Nullable;
 
 import com.lb.designpatterns.R;
 import com.lb.designpatterns.StaticFun;
+import com.lb.designpatterns.behavioral.observer.jdkobserver.Joker;
+import com.lb.designpatterns.behavioral.observer.jdkobserver.Person;
 
 /**
  * ----观察者模式----
@@ -36,9 +38,17 @@ import com.lb.designpatterns.StaticFun;
  * 该场景是为了更好的理解观察者模式，如果没有观察者模式的话，这三个人要不断的去查询自己想看的板块是否更新，
  * 引入观察者模式后，他们可以去做他们自己的事，不必一直去查询。
  * */
+
+/**
+ * jdk实现了观察者模式的接口，具体使用可以看jdkobserver中的代码
+ * ps（observer拼写的时候漏了个s，懒得改了，能看明白就好了）
+ *
+ * */
 public class OberverActivity extends Activity implements View.OnClickListener {
     private Newspaper newspaper;
     private Subscriber subscriber;
+
+    private Joker joker;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,6 +63,14 @@ public class OberverActivity extends Activity implements View.OnClickListener {
         firstMan();
         secondMan();
         thirdMan();
+
+        Person xiaochou1 = new Person("first");
+        Person xiaochou2 = new Person("second");
+        Person xiaochou3 = new Person("third");
+        joker = new Joker();
+        joker.addObserver(xiaochou1);
+        joker.addObserver(xiaochou2);
+        joker.addObserver(xiaochou3);
     }
 
     private void thirdMan() {
@@ -100,6 +118,9 @@ public class OberverActivity extends Activity implements View.OnClickListener {
             newspaper.updateNewspaper();
             //secondMan看了农业新闻后感觉不感兴趣，于是马上取消了农业新闻的订阅
             newspaper.unSubscribe("agricultural",subscriber);
+
+            joker.postNewVersion("小丑是谁");
+            joker.postNewVersion("小丑竟是我自己");
         }
     }
 }
