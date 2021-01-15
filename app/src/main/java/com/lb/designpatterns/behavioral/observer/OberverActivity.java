@@ -40,8 +40,13 @@ import com.lb.designpatterns.behavioral.observer.jdkobserver.Person;
  * */
 
 /**
+ *
  * jdk实现了观察者模式的接口，具体使用可以看jdkobserver中的代码
  * ps（observer拼写的时候漏了个s，懒得改了，能看明白就好了）
+ *
+ * android中也有许多观察者模式的例子，比如lifecycle的用法
+ * lifecycle的使用在Android study这项目中有，不嫌麻烦的话可以去看下，这里就不重复添加了
+ * 一个joker的使用例子应该足够了解怎么在java中使用封装好的observer接口，lifecycle的例子让你知道怎么应对observer模式。
  *
  * */
 public class OberverActivity extends Activity implements View.OnClickListener {
